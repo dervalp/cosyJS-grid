@@ -1,6 +1,6 @@
 {
   "name": "cosy-grid",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Building html for Bootsrap, Foundation or custom css grid.",
   "main": "index.js",
   "scripts": {
