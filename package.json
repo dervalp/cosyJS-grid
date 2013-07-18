@@ -1,5 +1,5 @@
 {
-  "name": "cosyJS-grid",
+  "name": "cosy-grid",
   "version": "0.0.1",
   "description": "Building html for Bootsrap, Foundation or custom css grid.",
   "main": "index.js",
