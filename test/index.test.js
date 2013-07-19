@@ -14,24 +14,24 @@ describe( "Given a grid factory", function( ) {
         } ).should.
         throw ( );
     } );
-    it( "should be able to create default grid", function( ) {
+    it( "should be able to render default grid", function( ) {
         var defaultGrid = gridFactory.create( );
         defaultGrid.should.exists;
-        defaultGrid.create.should.exists;
+        defaultGrid.render.should.exists;
     } );
     it( "should be able to create bootstrap grid", function( ) {
         var bootstrapGrid = gridFactory.create( "bootstrap" );
         bootstrapGrid.should.exists;
-        bootstrapGrid.create.should.exists;
+        bootstrapGrid.render.should.exists;
     } );
     it( "should be able to create bootstrap grid", function( ) {
         var bootstrapFluidGrid = gridFactory.create( "bootstrapFluid" );
         bootstrapFluidGrid.should.exists;
-        bootstrapFluidGrid.create.should.exists;
+        bootstrapFluidGrid.render.should.exists;
     } );
     it( "should be able to create bootstrap grid", function( ) {
         var foundation = gridFactory.create( "foundation" );
         foundation.should.exists;
-        foundation.create.should.exists;
+        foundation.render.should.exists;
     } );
 } );

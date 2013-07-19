@@ -162,10 +162,10 @@ describe( "Given a gridBuilder", function( ) {
 
         describe( "with no parameter passed", function( ) {
             var grid = new gridBuilder( );
-            it( "should have a create method", function( ) {
-                grid.create.should.exists;
+            it( "should have a render method", function( ) {
+                grid.render.should.exists;
             } );
-            it( "create method should return a real basic structure with no paremter", function( ) {
+            it( "render method should return a real basic structure with no paremter", function( ) {
                 var html = grid.render( );
                 html.should.equal( "<div class='cosy-root 12'>{{{content}}}</div>" );
             } );
@@ -178,11 +178,11 @@ describe( "Given a gridBuilder", function( ) {
                 offsetPrefix: "offset"
             } );
 
-            it( "create method should return header main footer with appropriate parameter", function( ) {
+            it( "render method should return header main footer with appropriate parameter", function( ) {
                 var html = grid.render( basicStructure );
                 html.should.equal( "<div id='root' >{{{root}}}<div id='header' class='span12 header'>{{{header}}}</div><div id='content' >{{{content}}}</div></div>" );
             } );
-            it( "create method should return header main footer with appropriate parameter", function( ) {
+            it( "render method should return header main footer with appropriate parameter", function( ) {
                 var html = grid.render( offsetBasicStructure );
                 html.should.equal( "<div id='root' >{{{root}}}<div id='header' class='span10 offset2 header'>{{{header}}}</div><div id='content' >{{{content}}}</div></div>" );
             } );
@@ -200,37 +200,37 @@ describe( "Given a gridBuilder", function( ) {
                 mobileCentered: "small-centered",
             } );
 
-            it( "create layout with appropriate class", function( ) {
+            it( "render layout with appropriate class", function( ) {
                 var html = foundationGrid.render( basicStructure );
                 html.should.equal( "<div id='root' >{{{root}}}<div id='header' class='large-12 columns header'>{{{header}}}</div><div id='content' >{{{content}}}</div></div>" );
             } );
-            it( "create layout with appropriate syntax for mobile", function( ) {
+            it( "render layout with appropriate syntax for mobile", function( ) {
                 var html = foundationGrid.render( mobileBasicStructure );
                 html.should.equal( "<div id='root' >{{{root}}}<div id='header' class='large-12 small-6 columns header'>{{{header}}}</div><div id='content' >{{{content}}}</div></div>" );
             } );
-            it( "create layout with appropriate syntax with offset", function( ) {
+            it( "render layout with appropriate syntax with offset", function( ) {
                 var html = foundationGrid.render( offsetBasicStructure );
                 html.should.equal( "<div id='root' >{{{root}}}<div id='header' class='large-10 large-offset-2 columns header'>{{{header}}}</div><div id='content' >{{{content}}}</div></div>" );
             } );
-            it( "create layout with appropriate syntax with offset for large and mobile", function( ) {
+            it( "render layout with appropriate syntax with offset for large and mobile", function( ) {
                 var html = foundationGrid.render( offsetAndMobileBasicStructure );
                 html.should.equal( "<div id='root' >{{{root}}}<div id='header' class='large-10 small-12 large-offset-2 columns header'>{{{header}}}</div><div id='content' >{{{content}}}</div></div>" );
             } );
-            it( "create layout with appropriate syntax with offset for large and offset for mobile", function( ) {
+            it( "render layout with appropriate syntax with offset for large and offset for mobile", function( ) {
                 var html = foundationGrid.render( mobileOffsetAndOffsetAndMobileBasicStructure );
                 html.should.equal( "<div id='root' >{{{root}}}<div id='header' class='large-10 small-11 large-offset-2 small-offset-1 columns header'>{{{header}}}</div><div id='content' >{{{content}}}</div></div>" );
             } );
-            it( "create layout with appropriate syntax with offset for large and offset for mobile and large centered", function( ) {
+            it( "render layout with appropriate syntax with offset for large and offset for mobile and large centered", function( ) {
                 var html = foundationGrid.render( centeredMobileOffsetAndOffsetAndMobileBasicStructure );
                 html.should.equal( "<div id='root' >{{{root}}}<div id='header' class='large-10 small-11 large-offset-2 small-offset-1 large-centered columns header'>{{{header}}}</div><div id='content' >{{{content}}}</div></div>" );
             } );
-            it( "create layout with appropriate syntax with mobileOffset offset for large and offset for mobile and large centered", function( ) {
+            it( "render layout with appropriate syntax with mobileOffset offset for large and offset for mobile and large centered", function( ) {
                 var html = foundationGrid.render( mobileCenteredCenteredMobileOffsetAndOffsetAndMobileBasicStructure );
                 html.should.equal( "<div id='root' >{{{root}}}<div id='header' class='large-10 small-11 large-offset-2 small-offset-1 large-centered small-centered columns header'>{{{header}}}</div><div id='content' >{{{content}}}</div></div>" );
             } );
-            it( "create layout with full options", function( ) {
-                var html = foundationGrid.create( fullOptions );
-                html.should.equal( "<div id='render' >{{{root}}}<div id='header' class='large-10 small-11 large-offset-2 small-offset-1 large-centered small-centered pull-2 columns header'>{{{header}}}</div><div id='content' >{{{content}}}</div></div>" );
+            it( "render layout with full options", function( ) {
+                var html = foundationGrid.render( fullOptions );
+                html.should.equal( "<div id='root' >{{{root}}}<div id='header' class='large-10 small-11 large-offset-2 small-offset-1 large-centered small-centered pull-2 columns header'>{{{header}}}</div><div id='content' >{{{content}}}</div></div>" );
             } );
         } );
     } );
