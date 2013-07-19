@@ -2,11 +2,26 @@
   "name": "cosy-grid",
   "version": "0.0.2",
   "description": "Building html for Bootsrap, Foundation or custom css grid.",
+  "author": "Pierre Derval <dervalp@gmail.com>",
   "main": "index.js",
   "repository": "",
   "author": "dervalp",
   "license": "MIT",
   "devDependencies": {
-    "should": "~1.2.2"
-  }
+    "should": "~1.2.2",
+    "mocha": "~1.12.0",
+    "blanket": "~1.1.5",
+    "travis-cov": "~0.2.4"
+  },
+  "scripts": {
+     "travis-cov": {
+       "threshold": 60
+     },
+     "blanket": {
+       "pattern": [
+        "lib/"
+      ]
+     },
+     "test": "mocha --recursive --require blanket -R travis-cov"
+   }
 }
