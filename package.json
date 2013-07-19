@@ -14,14 +14,15 @@
     "travis-cov": "~0.2.4"
   },
   "scripts": {
-     "travis-cov": {
-       "threshold": 60
-     },
-     "blanket": {
-       "pattern": [
-        "lib/"
-      ]
-     },
-     "test": "mocha --recursive --require blanket -R travis-cov"
-   }
+    "travis-cov": {
+      "threshold": 60
+    },
+    "blanket": {
+      "pattern": [
+        "lib"
+      ],
+      "data-cover-never": "node_modules"
+    },
+    "test": "mocha --recursive --require blanket -R travis-cov"
+  }
 }
