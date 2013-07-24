@@ -1,6 +1,6 @@
 {
   "name": "cosy-grid",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "homepage": "https://github.com/dervalp/cosyJS-grid/",
   "description": "Building html for Bootsrap, Foundation or custom css grid based on JSON.",
   "author": {
