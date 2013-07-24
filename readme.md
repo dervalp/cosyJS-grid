@@ -6,9 +6,7 @@
 
 ###Create
 
-arguments can be : "foundation|boostrap|boostrap-fluid"
-
-or an object:
+arguments can be : ```foundation|boostrap|boostrap-fluid``` or an object:
 
 ```javascript
 {
