@@ -1,4 +1,4 @@
-var DOMBuilder = require( "../lib/DOMBuilder" ),
+var DOMBuilder = require( "../lib/dom" ),
     should = require( "should" );
 
 describe( "Given a DOMBuilder", function( ) {
