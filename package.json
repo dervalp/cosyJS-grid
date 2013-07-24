@@ -17,7 +17,7 @@
   "license": "MIT",
   "devDependencies": {
     "should": "~1.2.2",
-    "mocha": "~1.12.0"
+    "mocha": "~1.11.0"
   },
   "bugs": {
     "url": "https://github.com/dervalp/cosyJS-grid/issues"
