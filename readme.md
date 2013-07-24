@@ -1,5 +1,7 @@
 #cosyJS-grid
 
+[![Build Status](https://travis-ci.org/dervalp/cosyJS-grid.png?branch=master)](https://travis-ci.org/dervalp/cosyJS-grid)
+
 ##API
 
 ###Create
